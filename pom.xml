@@ -34,16 +34,7 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<!-- A AJOUTER pour lier une registry-->
-		<dependency>
-			<groupId>org.apache.avro</groupId>
-			<artifactId>avro</artifactId>
-			<version>${avro.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>io.apicurio</groupId>
-			<artifactId>apicurio-registry-utils-serde</artifactId>
-			<version>${apicurio.version}</version>
-		</dependency>
+		 
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-client</artifactId>
@@ -58,27 +49,17 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
 			<plugin>
-				<groupId>org.apache.avro</groupId>
-				<artifactId>avro-maven-plugin</artifactId>
-				<version>${avro.version}</version>
-				<executions>
-					<execution>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>schema</goal>
-						</goals>
-						<configuration>
-							<sourceDirectory>
-								${project.basedir}/src/main/resources/avro</sourceDirectory>
-							<includes>
-								<include>**/*.avsc</include>
-							</includes>
-							<outputDirectory>
-								${project.build.directory}/generated-sources/avro/schema</outputDirectory>
-						</configuration>
-					</execution>
-				</executions>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.0</version>
+				<configuration>
+					<to>
+						<image>quay.io/olivier_castanos/kcb</image>
+					</to>
+					
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
