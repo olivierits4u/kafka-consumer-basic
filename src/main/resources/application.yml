@@ -37,5 +37,5 @@ spring.kafka.consumer.properties.spring.json.trusted.packages: "*"
 
 #spring.kafka.properties.sasl.jaas.config: org.apache.kafka.common.security.scram.ScramLoginModule required username="consumer-dev" password="AAAAAA";
 #spring.kafka.properties.ssl.truststore.password: EEEEEEE
--Dspring.config.additional-location=file:/config/application.yml,file:/config-secret/application.yml
+#-Dspring.config.additional-location=file:/config/application.yml,file:/config-secret/application.yml
 ###
