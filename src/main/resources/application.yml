@@ -3,9 +3,9 @@ kafka.topic.servers: kafka-dev-kafka-bootstrap.kafka-dev:9092
 server.port: 8080
 kafka.consumer.group-id: group_of_consumer
 spring.kafka.bootstrap-servers: kafka-dev-kafka-bootstrap.kafka-dev:9092
-spring.kafka.properties.sasl.mechanism: SCRAM-SHA-512 
-spring.kafka.properties.security.protocol: SASL_SSL
-spring.kafka.properties.ssl.truststore.location: /truststore/truststore.jks
+#spring.kafka.properties.sasl.mechanism: SCRAM-SHA-512 
+#spring.kafka.properties.security.protocol: SASL_SSL
+#spring.kafka.properties.ssl.truststore.location: /truststore/truststore.jks
 #spring.kafka.properties.sasl.jaas.config: org.apache.kafka.common.security.scram.ScramLoginModule required username="@@username@@" password="@@password@@";
 #spring.kafka.properties.ssl.truststore.password: @@JKS_PASSWORD@@
 
