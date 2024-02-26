@@ -9,8 +9,8 @@
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
 		<avro.version>1.10.0</avro.version>
 		<apicurio.version>1.3.2.Final</apicurio.version>
 	</properties>
@@ -50,17 +50,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			
-			<plugin>
-				<groupId>com.google.cloud.tools</groupId>
-				<artifactId>jib-maven-plugin</artifactId>
-				<version>3.4.0</version>
-				<configuration>
-					<to>
-						<image>quay.io/olivier_castanos/kcb</image>
-					</to>
-					
-				</configuration>
-			</plugin>
+		
 		</plugins>
 	</build>
 </project>
