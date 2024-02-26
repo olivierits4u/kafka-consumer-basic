@@ -37,8 +37,8 @@
             <activeByDefault>true</activeByDefault>
          </activation>
          <properties>
-            <sonar.host.url>http://20.101.12.144:9000</sonar.host.url>
-            <sonar.login>f79c13cdbf2aea68ae6a0fcd32b4b2896b8d5cc0</sonar.login>
+            <sonar.host.url>https://ebrc-saas-sonarqube.mgt-001.apps.rh.7957.local</sonar.host.url>
+            <sonar.login>9cbbdc1048249efd9b70b22e3883e4689b32ac1f</sonar.login>
          </properties>
       </profile>
       <profile>
