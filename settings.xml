@@ -70,7 +70,7 @@
    <proxy>
         <host>webproxy.csv.local</host>
         <port>3128</port>
-        <nonProxyHosts></nonProxyHosts>
+        <nonProxyHosts>*.local</nonProxyHosts>
     </proxy>
    </proxies>
 </settings>
