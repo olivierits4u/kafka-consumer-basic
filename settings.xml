@@ -26,7 +26,7 @@
       <mirror>
          <id>internal-repository</id>
          <name>Maven Repository Manager running on repo.mycompany.com</name>
-         <url>http://ebrc-saas-nexus.mgt-001.apps.rh.7957.local</url>
+         <url>https://ebrc-saas-nexus.mgt-001.apps.rh.7957.local</url>
          <mirrorOf>*</mirrorOf>
       </mirror>
    </mirrors>
