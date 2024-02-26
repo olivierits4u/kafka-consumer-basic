@@ -26,7 +26,7 @@
       <mirror>
          <id>internal-repository</id>
          <name>Maven Repository Manager running on repo.mycompany.com</name>
-         <url>https://ebrc-saas-nexus.mgt-001.apps.rh.7957.local</url>
+         <url>http://ebrc-saas-nexus.mgt-001.apps.rh.7957.local</url>
          <mirrorOf>*</mirrorOf>
       </mirror>
    </mirrors>
@@ -43,9 +43,9 @@
       </profile>
       <profile>
          <properties>
-            <altDeploymentRepository>nexus-snapshots::default:https://ebrc-saas-nexus.mgt-001.apps.rh.7957.local/repository/maven-snapshots/</altDeploymentRepository>
-            <altReleaseDeploymentRepository>nexus-releases::default::https://ebrc-saas-nexus.mgt-001.apps.rh.7957.local/repository/maven-releases/</altReleaseDeploymentRepository>
-            <altSnapshotDeploymentRepository>nexus-snapshots::default::https://ebrc-saas-nexus.mgt-001.apps.rh.7957.local/repository/maven-snapshots/</altSnapshotDeploymentRepository>
+            <altDeploymentRepository>nexus-snapshots::default:http://ebrc-saas-nexus.mgt-001.apps.rh.7957.local/repository/maven-snapshots/</altDeploymentRepository>
+            <altReleaseDeploymentRepository>nexus-releases::default::http://ebrc-saas-nexus.mgt-001.apps.rh.7957.local/repository/maven-releases/</altReleaseDeploymentRepository>
+            <altSnapshotDeploymentRepository>nexus-snapshots::default::http://ebrc-saas-nexus.mgt-001.apps.rh.7957.local/repository/maven-snapshots/</altSnapshotDeploymentRepository>
          </properties>
          <id>allow-snapshots</id>
          <activation>
@@ -54,7 +54,7 @@
          <repositories>
             <repository>
                <id>snapshots-repo</id>
-               <url>https://ebrc-saas-nexus.mgt-001.apps.rh.7957.local/repository/maven-snapshots</url>
+               <url>http://ebrc-saas-nexus.mgt-001.apps.rh.7957.local/repository/maven-snapshots</url>
                <releases>
                   <enabled>false</enabled>
                </releases>
